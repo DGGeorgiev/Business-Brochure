@@ -62,6 +62,10 @@ html {
     clip: rect(0,0,0,0);
     border: 0;
   }
+  .logo-img{
+    width: 400px;
+    height: 250px;
+  }
 /*
 -----------------------------
 .class selectors
