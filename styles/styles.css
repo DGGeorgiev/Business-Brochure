@@ -16,10 +16,53 @@ html {
     color: black;
     background-color: #ee7b08; }
 
+    header .container-nav {
+      position: relative;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      z-index: 9999; }
 
+      /* Hamburger Styles */
+  .hamburger {
+    display: block;
+    border: none;
+    background-color: transparent;
+    padding: 0;
+    margin: 0;
+    width: 46px;
+    height: 46px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+  }
 
+  .hamburger-icon {
+    color: white;
+    line-height: 1;
+    font-size: 1.9em;
+  }
 
-    /*
+  .hamburger:focus,
+  .hamburger-icon:focus {
+    outline: none;
+  }
+
+  .hamburger:focus .hamburger-icon { 
+    outline: none; 
+  } 
+
+  .hamburger-text {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0,0,0,0);
+    border: 0;
+  }
+/*
 -----------------------------
 .class selectors
 -----------------------------
