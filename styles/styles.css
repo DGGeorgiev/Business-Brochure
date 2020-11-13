@@ -1,5 +1,40 @@
+@charset "utf-8";
+/*
+-----------------------------
+HTML selectors
+-----------------------------
+*/
 html {
   box-sizing: border-box; }
 
 *, *:before, *:after {
   box-sizing: inherit; }
+  
+  header {
+    display: flex;
+    justify-content: center;
+    color: black;
+    background-color: #ee7b08; }
+
+
+
+
+    /*
+-----------------------------
+.class selectors
+-----------------------------
+*/
+
+
+
+/*
+-----------------------------
+#id selectors
+-----------------------------
+*/
+
+/*
+-----------------------------
+@media selectors
+-----------------------------
+*/
