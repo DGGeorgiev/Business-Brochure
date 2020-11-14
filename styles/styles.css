@@ -14,6 +14,11 @@ html {
   box-sizing: inherit;
 }
 
+img {
+  max-width: 100%;
+  height: auto;
+}
+
 header {
   display: flex;
   justify-content: center;
@@ -74,7 +79,7 @@ main {
 footer {
   color: black;
   justify-content: center;
-  background-color: #fbf9f7;
+  background-color: #ee7b08;
   text-align: center;
   border-top: solid 1px #ccc;
   width: 100%;
@@ -129,8 +134,8 @@ footer {
   border: 0;
 }
 .logo-img {
-  width: 400px;
-  height: 250px;
+  width: 80px;
+  height: 80px;
 }
 
 
@@ -168,6 +173,7 @@ footer {
 
 .facebook {
   padding-right: 7px;
+  
 }
 
 .twitter {
