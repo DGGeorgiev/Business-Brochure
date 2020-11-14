@@ -29,13 +29,8 @@ header .container-nav {
 }
 nav {
   
-  /*
-  display:none;
-  remove the nav from the HTML
-  */
-  display:none;
-
-
+  /*overflow: hidden;*/
+  visibility: hidden;
   width: 100%;
   transition: height 0.3s ease, visibility 0s 0.3s;
 }
@@ -137,13 +132,9 @@ footer {
 
 
 .show nav {
-  /*
-  display:block;
-  add the nav to the HTML
-  */
-  display:block;
+  visibility: visible;
   width: 100%;
-  
+  height: 84px;
   transition: height 0.3s ease, visibiliy 0s;
 }
 
