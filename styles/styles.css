@@ -68,7 +68,7 @@ nav a:active {
 }*/
 main {
   background-color: #fff5d5;
-  padding: 20px 30px 30px 30px;
+  /*padding: 20px 30px 30px 30px;*/
 }
 
 /* footer  */
@@ -89,7 +89,6 @@ footer {
 .class selectors
 -----------------------------
 */
-
 .center-align{
   text-align: center;
 }
@@ -162,6 +161,15 @@ footer {
   transition: height 0.3s ease, visibiliy 0s;
 }
 
+.paragraph{
+  margin: 0 auto;
+  padding: 0px 30px 0px 30px;
+  text-align: justify;
+}
+
+.text{
+  padding-bottom: 30px;
+}
 .footer-info {
   display: flex;
   justify-content: space-evenly;
@@ -280,7 +288,8 @@ footer {
 @media selectors
 -----------------------------
 */
-@media only screen and (min-width: 1920) {
+@media only screen and (max-width: 1920) {
+
   .modules {
     padding-left: 20px;
     padding-right: 20px;
@@ -301,7 +310,8 @@ footer {
       padding-left: 40px; }
     .menu caption {
       padding-left: 40px; }
-   }
+   } 
+
 
 @media only screen and (max-width: 720px) {
   .modules {
