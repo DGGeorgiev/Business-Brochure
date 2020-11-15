@@ -6,7 +6,3 @@ btn.addEventListener('click', function(){
     body.classList.toggle('show');
 });
 
-//hamburger button
-function myFunction(x) {
-    x.classList.toggle("change");
-  }

@@ -89,6 +89,10 @@ footer {
 .class selectors
 -----------------------------
 */
+
+.center-align{
+  text-align: center;
+}
 /* Hamburger Styles */
 .hamburger {
   position: absolute;
@@ -276,7 +280,7 @@ footer {
 @media selectors
 -----------------------------
 */
-@media only screen and (max-width: 1920) {
+@media only screen and (min-width: 1920) {
   .modules {
     padding-left: 20px;
     padding-right: 20px;
@@ -298,18 +302,6 @@ footer {
     .menu caption {
       padding-left: 40px; }
    }
-
-   .hamburger{
-     display: hide;
-   }
-
-   header .container-nav nav a {
-    display: block;
-    padding: 53px;
-    line-height: 15px;
-    text-decoration: none;
-    color: #686868;
-}
 
 @media only screen and (max-width: 720px) {
   .modules {
