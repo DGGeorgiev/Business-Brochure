@@ -23,23 +23,18 @@ header {
   justify-content: center;
   color: black;
   background-color: #ee7b08;
-}
-
-
-
-
-header .container-nav {
-  position: relative;
   flex-wrap: wrap;
-  justify-content: space-between;
+  position: relative;
 }
+
 nav {
   
   /*
   display:none;
   remove the nav from the HTML
   */
-  display:none;
+  height: 0;
+  overflow: hidden;
   width: 100%;
   transition: height 0.3s ease, visibility 0s 0.3s;
 }
@@ -53,7 +48,6 @@ nav ul {
 
 nav a {
   line-height: 40px;
-  border-bottom: 1px solid #333;
   border-top: 1px solid #afafaf;
   padding: 0 20px;
   color: white;
@@ -96,11 +90,14 @@ footer {
 */
 /* Hamburger Styles */
 .hamburger {
+  position: absolute;
+  right: 20px;
+  top: 20px;
   display: block;
   border: none;
   background-color: transparent;
-  padding: 45px 0px 0px;
-  margin: 0px;
+  padding: 0;
+  margin: 0;
   width: 46px;
   height: 46px;
   display: flex;
@@ -144,17 +141,18 @@ footer {
   z-index: 9999; 
 }
 
-
 .logo-img {
   width: 200px;
   height: auto;
 }
+
 .show nav {
   /*
   display:block;
   add the nav to the HTML
   */
-  display:block;
+  /* display:block; */
+  height: 168px;
   width: 100%; 
   transition: height 0.3s ease, visibiliy 0s;
 }
