@@ -13,7 +13,6 @@ html {
 *:after {
   box-sizing: inherit;
 }
-
 img {
   max-width: 100%;
   height: auto;
@@ -33,7 +32,6 @@ header .container-nav {
   position: relative;
   flex-wrap: wrap;
   justify-content: space-between;
-  z-index: 9999;
 }
 nav {
   
@@ -82,7 +80,7 @@ main {
 footer {
   color: black;
   justify-content: center;
-  background-color: #ee7b08;
+  background-color: #fbf9f7;
   text-align: center;
   border-top: solid 1px #ccc;
   width: 100%;
@@ -148,11 +146,9 @@ footer {
 
 
 .logo-img {
-  width: 80px;
-  height: 80px;
+  width: 200px;
+  height: auto;
 }
-
-
 .show nav {
   /*
   display:block;
@@ -186,7 +182,6 @@ footer {
 
 .facebook {
   padding-right: 7px;
-  
 }
 
 .twitter {
@@ -224,6 +219,53 @@ footer {
   color: rgb(11, 62, 82);
 }
 
+/* Menu page - modules style  */
+.modules {
+  background-image: url(../images/cats-cafe-4697753_1920.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  padding-left: 40px;
+  padding-right: 40px;
+  padding-top: 20px;
+  padding-bottom: 40px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-column-gap: 40px; }
+
+.modules-title {
+  grid-column: span 3;
+  text-align: center;
+  font-size: 1rem;
+  padding-top: 30px;
+  padding-bottom: 30px; }
+
+.menu {
+  background: rgba(245, 239, 239, 0.8);
+  padding-bottom: 20px; }
+  .menu table {
+    width: 100%; }
+  .menu td {
+    font-size: 1em;
+    padding-top: 30px;
+    padding-bottom: 20px; }
+  .menu tr td:last-child {
+    text-align: right;
+    padding-right: 60px;
+    padding-left: 0px; }
+  .menu tr td:first-child {
+    text-align: left;
+    padding-left: 60px;
+    padding-right: 0px; }
+  .menu caption {
+    text-decoration: underline;
+    text-align: left;
+    font-size: 1.2em;
+    padding-left: 60px;
+    padding-bottom: 10px;
+    padding-top: 30px; }
+/* end--main style  */
 /*
 -----------------------------
 #id selectors
@@ -235,3 +277,57 @@ footer {
 @media selectors
 -----------------------------
 */
+@media only screen and (max-width: 1920) {
+  .modules {
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 10px;
+    padding-bottom: 20px;
+    grid-column-gap: 20px; }
+
+  .menu {
+    padding: 0px; }
+    .menu td {
+      padding-top: 20px;
+      padding-bottom: 10px;
+      padding-right: 0px;
+      padding-left: 0px; }
+    .menu tr td:last-child {
+      padding-right: 40px; }
+    .menu tr td:first-child {
+      padding-left: 40px; }
+    .menu caption {
+      padding-left: 40px; }
+   }
+
+@media only screen and (max-width: 720px) {
+  .modules {
+    grid-column-gap: 0;
+    grid-row-gap: 40px;
+    padding-left: 60px;
+    padding-right: 60px;
+    padding-top: 10px;
+    padding-bottom: 40px;
+    font-size: 1rem; }
+    .modules .modules-title {
+      grid-column: span 3;
+      padding-bottom: 0; }
+    .modules .m-01 {
+      grid-column: span 3; }
+    .modules .m-02 {
+      grid-column: span 3; }
+    .modules .m-03 {
+      grid-column: span 3; }
+    .modules caption {
+      padding-left: 60px; }
+    .modules td {
+      padding-top: 10px;
+      padding-bottom: 10px; }
+    .modules tr td:last-child {
+      padding-right: 60px; }
+    .modules tr td:first-child {
+      padding-left: 60px; }
+   }
+
+
+
