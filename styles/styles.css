@@ -26,6 +26,9 @@ header {
   background-color: #ee7b08;
 }
 
+
+
+
 header .container-nav {
   position: relative;
   flex-wrap: wrap;
@@ -98,8 +101,8 @@ footer {
   display: block;
   border: none;
   background-color: transparent;
-  padding: 0;
-  margin: 0;
+  padding: 45px 0px 0px;
+  margin: 0px;
   width: 46px;
   height: 46px;
   display: flex;
@@ -133,6 +136,17 @@ footer {
   clip: rect(0, 0, 0, 0);
   border: 0;
 }
+
+.logo {
+  width: 200px;
+  padding: 0 50px;
+  /*position: relative;*/
+  display: flex;
+  justify-content: center;
+  z-index: 9999; 
+}
+
+
 .logo-img {
   width: 80px;
   height: 80px;
@@ -145,8 +159,7 @@ footer {
   add the nav to the HTML
   */
   display:block;
-  width: 100%;
-  
+  width: 100%; 
   transition: height 0.3s ease, visibiliy 0s;
 }
 
