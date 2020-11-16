@@ -232,7 +232,7 @@ footer {
 
 /* Menu page - modules style  */
 .modules {
-  background-image: url(../images/pet-cafe.jpg);
+  background-image: url(../images/menu.jpg);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -249,8 +249,10 @@ footer {
   grid-column: span 3;
   text-align: center;
   font-size: 1rem;
-  padding-top: 30px;
-  padding-bottom: 30px; }
+  padding-top: 50px;
+  padding-bottom: 30px;
+  color: white; 
+}
 
 .menu {
   background: rgba(245, 239, 239, 0.8);
