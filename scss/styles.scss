@@ -3,7 +3,23 @@
 
 @import "nav";
 
+/* 
 
+add this to the settings JSON file
+
+ "liveSassCompile.settings.formats":[
+
+        // You can add more
+        {
+            "format": "expanded",
+            "extensionName": ".css",
+            "savePath": "/styles"
+        },
+
+    ]
+
+
+*/
 
 /*
 -----------------------------
