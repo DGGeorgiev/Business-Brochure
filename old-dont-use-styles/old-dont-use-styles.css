@@ -627,7 +627,7 @@ footer {
 
 /* Menu page - modules style  */
 .modules {
-  background-image: url(../images/pet-cafe.jpg);
+  background-image: url(../images/menu.jpg);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -638,7 +638,7 @@ footer {
   margin: 0 auto;
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: (1fr)[3];
+  -ms-grid-columns: (1fr);
       grid-template-columns: repeat(3, 1fr);
   grid-column-gap: 40px;
 }

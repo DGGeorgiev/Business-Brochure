@@ -95,3 +95,6 @@ node_modules/
 *.swp
 *.vi
 *~
+
+# Ignore CSS
+styles/
