@@ -1,0 +1,363 @@
+@import "normalize"; 
+
+
+
+@import "resets";
+@import "wrapper";
+@import "header";
+@import "nav";
+@import "body";
+@import "main";
+@import "variables";
+@import "footer";
+@import "body";
+
+/* 
+
+add this to the settings JSON file
+
+ "liveSassCompile.settings.formats":[
+
+        // You can add more
+        {
+            "format": "expanded",
+            "extensionName": ".css",
+            "savePath": "/styles"
+        },
+
+    ]
+
+
+*/
+
+/*
+-----------------------------
+HTML selectors
+-----------------------------
+*/
+
+
+
+
+
+
+/*nav li:last-child a {
+  border-bottom: 0.5px solid #afafaf;
+}*/
+main {
+  background-color: #fff5d5;
+  /*padding: 20px 30px 30px 30px;*/
+}
+
+/* footer  */
+
+
+/*
+-----------------------------
+.class selectors
+-----------------------------
+*/
+.center-align{
+  text-align: center;
+}
+
+
+.logo {
+  width: 200px;
+  padding: 0 50px;
+  /*position: relative;*/
+  display: flex;
+  justify-content: center;
+  z-index: 9999; 
+}
+
+.logo-img {
+  width: 200px;
+  height: auto;
+}
+
+.show nav {
+  /*
+  display:block;
+  add the nav to the HTML
+  */
+  /* display:block; */
+  height: 168px;
+  width: 100%; 
+  transition: height 0.3s ease, visibiliy 0s;
+}
+
+.paragraph{
+  margin: 0 auto;
+  padding: 0px 30px 0px 30px;
+  text-align: justify;
+}
+
+.text{
+  padding-bottom: 30px;
+}
+.footer-info {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.location {
+  display: flex;
+  justify-content: center;
+}
+
+.email-phone {
+  display: flex;
+  justify-content: center;
+}
+
+.social {
+  display: flex;
+  flex: flex-end;
+  padding: 25px 0;
+}
+
+.facebook {
+  padding-right: 7px;
+}
+
+.twitter {
+  padding-right: 7px;
+}
+
+.instagram {
+  padding-right: 7px;
+}
+
+.copyright {
+  color: black;
+  display: flex;
+  justify-content: center;
+  background-color: #ee7b08;
+  opacity: 0.5;
+  text-align: center;
+  line-height: 5px;
+  border-top: solid 1px #ccc;
+  padding-top: 0px;
+  padding-right: 0px;
+  padding-bottom: 0px;
+  font-family: "PT Serif", serif;
+  font-size: 12px;
+  color: black;
+}
+
+.link {
+  color: black;
+  text-decoration: none;
+  font-size: 12px;
+}
+
+.link:hover {
+  color: rgb(11, 62, 82);
+}
+
+/* Menu page - modules style  */
+.modules {
+  background-image: url(../images/pet-cafe.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  padding-left: 40px;
+  padding-right: 40px;
+  padding-top: 20px;
+  padding-bottom: 40px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-column-gap: 40px; }
+
+.modules-title {
+  grid-column: span 3;
+  text-align: center;
+  font-size: 1rem;
+  padding-top: 30px;
+  padding-bottom: 30px; }
+
+.menu {
+  background: rgba(245, 239, 239, 0.8);
+  padding-bottom: 20px; }
+  .menu table {
+    width: 100%; }
+  .menu td {
+    font-size: 1em;
+    padding-top: 30px;
+    padding-bottom: 20px; }
+  .menu tr td:last-child {
+    text-align: right;
+    padding-right: 60px;
+    padding-left: 0px; }
+  .menu tr td:first-child {
+    text-align: left;
+    padding-left: 60px;
+    padding-right: 0px; }
+  .menu caption {
+    text-decoration: underline;
+    text-align: left;
+    font-size: 1.2em;
+    padding-left: 60px;
+    padding-bottom: 10px;
+    padding-top: 30px; }
+/* end--main style  */
+/*
+-----------------------------
+#id selectors
+-----------------------------
+*/
+
+/*
+-----------------------------
+@media selectors
+-----------------------------
+*/
+@media only screen and (max-width: 1920) {
+
+  .modules {
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 10px;
+    padding-bottom: 20px;
+    grid-column-gap: 20px; }
+
+  .menu {
+    padding: 0px; }
+    .menu td {
+      padding-top: 20px;
+      padding-bottom: 10px;
+      padding-right: 0px;
+      padding-left: 0px; }
+    .menu tr td:last-child {
+      padding-right: 40px; }
+    .menu tr td:first-child {
+      padding-left: 40px; }
+    .menu caption {
+      padding-left: 40px; }
+   } 
+
+@media only screen and (max-width: 720px) {
+  .modules {
+    grid-column-gap: 0;
+    grid-row-gap: 40px;
+    padding-left: 60px;
+    padding-right: 60px;
+    padding-top: 10px;
+    padding-bottom: 40px;
+    font-size: 1rem; }
+    .modules .modules-title {
+      grid-column: span 3;
+      padding-bottom: 0; }
+    .modules .m-01 {
+      grid-column: span 3; }
+    .modules .m-02 {
+      grid-column: span 3; }
+    .modules .m-03 {
+      grid-column: span 3; }
+    .modules caption {
+      padding-left: 60px; }
+    .modules td {
+      padding-top: 10px;
+      padding-bottom: 10px; }
+    .modules tr td:last-child {
+      padding-right: 60px; }
+    .modules tr td:first-child {
+      padding-left: 60px; }
+   }
+
+   @import "compass/css3";
+
+@import url(https://fonts.googleapis.com/css?family=Merriweather);
+$red: #e74c3c;
+
+*, 
+*:before, 
+*:after {
+   @include box-sizing(border-box); 
+}
+
+html, body {
+  background: #f1f1f1;
+  font-family: 'Merriweather', sans-serif;
+  padding: 1em;
+}
+
+h1 {
+   text-align: center;
+   color: #a8a8a8;
+   @include text-shadow(1px 1px 0 rgba(white, 1));
+}
+
+form {
+   max-width: 600px;
+   text-align: center;
+   margin: 20px auto;
+  
+  input, textarea {
+     border:0; outline:0;
+     padding: 1em;
+     @include border-radius(8px);
+     display: block;
+     width: 100%;
+     margin-top: 1em;
+     font-family: 'Merriweather', sans-serif;
+     @include box-shadow(0 1px 1px rgba(black, 0.1));
+     resize: none;
+    
+    &:focus {
+       @include box-shadow(0 0px 2px rgba($red, 1)!important);
+    }
+  }
+  
+  #input-submit {
+     color: white; 
+     background: $red;
+     cursor: pointer;
+    
+    &:hover {
+       @include box-shadow(0 1px 1px 1px rgba(#aaa, 0.6)); 
+    }
+  }
+  
+  textarea {
+      height: 126px;
+  }
+}
+
+
+.half {
+  float: left;
+  width: 48%;
+  margin-bottom: 1em;
+}
+
+.right { width: 50%; }
+
+.left {
+     margin-right: 2%; 
+}
+
+
+@media (max-width: 480px) {
+  .half {
+     width: 100%; 
+     float: none;
+     margin-bottom: 0; 
+  }
+}
+
+
+/* Clearfix */
+.cf:before,
+.cf:after {
+    content: " "; /* 1 */
+    display: table; /* 2 */
+}
+
+.cf:after {
+    clear: both;
+}
+
+
