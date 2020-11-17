@@ -3,7 +3,15 @@ header {
     justify-content: center;
     color: black;
     background-color: #ee7b08;
-    // background-color: purple;
     flex-wrap: wrap;
     position: relative;
+ 
+
+  @media (min-width: 700px){
+    
+      justify-content: space-between;
+      flex-wrap: nowrap;
+      align-items: center;
+    
   }
+}
