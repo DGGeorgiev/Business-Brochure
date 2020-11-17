@@ -1,10 +1,11 @@
 .cards-container {
     max-width: 1020px;
     margin: 0 auto;
-    padding: 30px;
+    padding: 40px;
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
-    grid-gap: 30px;
+    grid-gap: 40px;
+   
 
     .card {
         position: relative;
@@ -14,6 +15,7 @@
         height: 200px;
         width: 100%;
         object-fit: cover;
+        border-radius: 25px;
         }
 
     .card-title {
@@ -23,6 +25,7 @@
         width: 100%;
         margin: 0;
         padding: 10px;
-        background-color: red;
+        background-color: rgba(255,255,255, 0.4);
+        text-align: center;
         }
     }
