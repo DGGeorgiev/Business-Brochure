@@ -2,7 +2,9 @@
 
 
 @import "nav";
-
+@import "resets";
+@import "header";
+@import "footer";
 /* 
 
 add this to the settings JSON file
@@ -27,29 +29,9 @@ HTML selectors
 -----------------------------
 */
 
-html {
-  box-sizing: border-box;
-}
 
-*,
-*:before,
-*:after {
-  box-sizing: inherit;
-}
-img {
-  max-width: 100%;
-  height: auto;
-}
 
-header {
-  display: flex;
-  justify-content: center;
-  color: black;
-  background-color: #ee7b08;
-  // background-color: purple;
-  flex-wrap: wrap;
-  position: relative;
-}
+
 
 
 /*nav li:last-child a {
@@ -61,17 +43,7 @@ main {
 }
 
 /* footer  */
-footer {
-  color: black;
-  justify-content: center;
-  background-color: #fbf9f7;
-  text-align: center;
-  border-top: solid 1px #ccc;
-  width: 100%;
-  font-family: "PT Serif", serif;
-  font-size: 12px;
-  color: #686868;
-}
+
 
 /*
 -----------------------------
