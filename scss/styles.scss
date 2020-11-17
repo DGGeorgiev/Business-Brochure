@@ -1,10 +1,17 @@
 @import "normalize"; 
 
 
-@import "nav";
+
 @import "resets";
+@import "wrapper";
 @import "header";
+@import "nav";
+@import "body";
+@import "main";
+@import "variables";
 @import "footer";
+@import "body";
+
 /* 
 
 add this to the settings JSON file
