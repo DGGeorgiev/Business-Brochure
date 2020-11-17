@@ -31,7 +31,33 @@ nav {
       }  
 
 }
+
+.show nav {
+    /*
+    display:block;
+    add the nav to the HTML
+    */
+    /* display:block; */
+    height: 168px;
+    width: 100%; 
+    transition: height 0.3s ease, visibiliy 0s;
+}
+
+.logo {
+    width: 200px;
+    padding: 0 50px;
+    /*position: relative;*/
+    display: flex;
+    justify-content: center;
+    z-index: 9999; 
+  }
   
+  .logo-img {
+    width: 200px;
+    height: auto;
+  }
+  
+
 /* Hamburger Styles */
 .hamburger {
     position: absolute;
