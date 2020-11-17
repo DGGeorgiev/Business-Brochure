@@ -54,27 +54,73 @@
                             </ul>
                         </nav>
                 </header>
-            <main>
-                <div class="banner">
-                    <img src="images/contact.jpg" alt="Hi five with Mia">
-                </div>
-                <article class="text">
-                    <h2 class="center-align">Contact Us</h2>
-            <form class="cf">
-                <div class="half left cf">
-                    <input type="text" id="input-name" placeholder="Name">
-                    <input type="email" id="input-email" placeholder="Email address">
-                    <input type="text" id="input-subject" placeholder="Subject">
-                </div>
-                <div class="half right cf">
-                    <textarea name="message" type="text" id="input-message" placeholder="Message"></textarea>
-                </div>  
-                    <input type="submit" value="Submit" id="input-submit">
-            </form>
-
-                    <p class="paragraph">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus nulla urna, porta ut faucibus ac, posuere vitae turpis. Maecenas vitae vulputate leo. Sed ut bibendum libero. Ut finibus ut arcu tincidunt rhoncus. Nullam pharetra lacus nec mi vehicula, tempor tempor purus faucibus. Vestibulum augue libero, aliquet et lobortis id, lobortis cursus nibh. Pellentesque urna nulla, sodales quis dignissim in, ultrices elementum nisi. Etiam pulvinar quis ante vitae scelerisque. Sed tincidunt nunc id varius elementum. Nulla euismod facilisis turpis, quis sodales quam suscipit quis. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus nulla urna, porta ut faucibus ac, posuere vitae turpis. Maecenas vitae vulputate leo. Sed ut bibendum libero. Ut finibus ut arcu tincidunt rhoncus. Nullam pharetra lacus nec mi vehicula, tempor tempor purus faucibus. Vestibulum augue libero, aliquet et lobortis id, lobortis cursus nibh. Pellentesque urna nulla, sodales quis dignissim in, ultrices elementum nisi. Etiam pulvinar quis ante vitae scelerisque. Sed tincidunt nunc id varius elementum. Nulla euismod facilisis turpis, quis sodales quam suscipit quis.</p>
-                </article>
-            </main>
+                <main id="main-form">
+                    <section class="form">
+                        <h2 class="hh hh-white"><span>Contact Us</span></h2>
+                        <form action="/">
+                            <div class="personal-input">
+                            <div class="form-group">
+                                <label for="name">Name</label>
+                                <input type="text" name="name" id="name">
+                            </div>
+                            <div class="form-group">
+                                <label for="phone">Phone</label>
+                                <input type="tel" name="tel" id="tel" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" placeholder="604-123-4567">
+                            </div>
+                            <div class="form-group">
+                                <label for="email">Email</label>
+                                <input type="email" name="email" id="email-input" placeholder="example@domain.com">
+                            </div>
+                        </div> <!--end of personal-input-->
+                        <div class="service-input">
+                            <div class="form-group">
+                                <label for="service">Select a service</label>
+                                <select name="service" id="service">
+                                    <option class="null" style="display:none" value="null">Please select a service...</option>
+                                    <option class="half-hour" value="half-hour">30-minute session</option>
+                                    <option class="full-hour" value="full-hour">60-minute session</option>
+                                </select>
+                            </div>
+        
+                            <div class="form-group">
+                                <label>Add-ons</label> <br>
+                                <div class="form-label">
+                                    <input type="checkbox" name="add-ons" id="grooming">
+                                    <label for="grooming">Grooming</label>
+                                </div>
+                                <div class="form-label">
+                                    <input type="checkbox" name="add-ons" id="costumes">
+                                    <label for="costumes">Costumes</label>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label>Contact me via</label>
+                                <div class="form-label">
+                                <input type="radio" name="contact-method" id="phone">
+                                <label for="phone">Phone</label>
+                                </div>
+                                <div class="form-label">
+                                <input type="radio" name="contact-method" id="sms">
+                                <label for="sms">SMS</label>
+                                </div>
+                                <div class="form-label">
+                                <input type="radio" name="contact-method" id="email">
+                                <label for="email">Email</label>
+                                </div>
+                            </div>
+                        </div><!--end of service input-->
+                            <div class="form-group">
+                                <label for="comments">questions?</label>
+                                <textarea name="comments" id="comments" cols="60" rows="4"></textarea>
+                            </div>
+                            <div class="form-group submit">
+                                <input type="submit" value="submit">
+                            </div>
+        
+                        </form>
+        
+                    </section>
+                </main>
             <footer>
                 <div class="footer-info">
                     <div class="location">
