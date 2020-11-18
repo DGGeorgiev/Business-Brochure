@@ -1,0 +1,14 @@
+
+.banner{
+    @media (min-width: 700px) {
+        height: 80vh;
+        img{
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            &.pet-banner{
+                object-position: bottom center;
+            }
+        }
+    }   
+}

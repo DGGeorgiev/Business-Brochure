@@ -1,51 +1,8 @@
 main {
     background-color: #fff5d5;
-    /*padding: 20px 30px 30px 30px;*/
-      padding-bottom: 30px;
+    padding-bottom: 30px;
   }
 
-.cards-container {
-    max-width: 1020px;
-    margin: 0 auto;
-    padding: 40px;
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
-    grid-gap: 40px;
-   
 
-    .card {
-        position: relative;
-        }
 
-    .card-image {
-        height: 200px;
-        width: 100%;
-        object-fit: cover;
-        border-radius: 25px;
-        }
-
-    .card-title {
-        position: absolute;
-        bottom: 0;
-        left: 0;
-        width: 100%;
-        margin: 0;
-        padding: 10px;
-        background-color: rgba(255,255,255, 0.4);
-        text-align: center;
-        font-family: 'Noto Sans', sans-serif;
-        }
-    }
-    .banner{
-        @media (min-width: 700px) {
-            height: 80vh;
-            img{
-                width: 100%;
-                height: 100%;
-                object-fit: cover;
-                &.pet-banner{
-                    object-position: bottom center;
-                }
-            }
-        }
-    }
+  
