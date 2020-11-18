@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "AAAA,AAAA,IAAI,CAAA;EACA,gBAAgB,EAAE,IAAI;CACzB",
+    "sources": [
+        "../Business-Brochure/scss/test-sass-file.scss"
+    ],
+    "names": [],
+    "file": "test-sass-file.css"
+}
