@@ -1,5 +1,5 @@
 .section-03 article {
-	color: white;
+	color: grayscale($color: #464646);
 	padding: 2rem;
 	grid-column: span 2;
 }
@@ -31,7 +31,13 @@
 		grid-template-columns: 1fr repeat(2, minmax(auto, 540px)) 1fr;
   	}
 }
-
+.article-01 h2{
+    text-align: center;
+  } 
+  .article-02 h2{
+    text-align: center;
+  } 
+  
 .cards-container-02 {
     max-width: 1200px;
     margin: 0 auto;

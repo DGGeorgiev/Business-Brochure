@@ -16,7 +16,7 @@ nav {
         line-height: 40px;
         /*border-top: 1px solid #afafaf;*/
         padding: 0 20px;
-        color:white;
+        color:grayscale($color: #464646);
         text-align: center;
         text-decoration: none;
         font-weight: bold;
@@ -60,7 +60,7 @@ nav {
         }
 
         a {
-            color: white;
+            color: grayscale($color: #464646);
             text-decoration: none;
             font-size:1.25em;
             line-height:40px;
