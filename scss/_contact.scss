@@ -2,13 +2,12 @@
    margin: 0 auto;
 }
 
-form {
+.form {
    @media (min-height: 800px) and (min-width: 1160px){
-       display: grid;
-       grid-template-columns: repeat(2, 1fr);
-       grid-template-rows: repeat(2, 1fr);
-       grid-template-areas: "personal-input service-input"
-       "comments submit-btn";
+       display: grid;;
+       grid-template-columns: repeat(1,  );
+       grid-template-rows: repeat(1,  );
+       grid-template-areas: "personal-input service-input submit-btn";
        column-gap: 40px;
        .personal-input {
            grid-area: personal-input;
@@ -16,7 +15,7 @@ form {
        .service-input {
            grid-area: service-input;
        }
-       button {
+       .submit-btn {
            grid-area: submit-btn;
        }
    }
@@ -29,15 +28,14 @@ form {
 }
 
 .form label {
-  @include lowercase;
-   font-weight: 600;
+font-weight: 600;
 }
 
 .form input, .form select, .form option, .form textarea {
     line-height: 2;
     border-radius: 18px;
     border: 1px solid lightgray;
-    font-family: $body-font;
+    font-family: black;
     padding-left: 10px;
     cursor: pointer;
 }
@@ -53,7 +51,7 @@ form {
 
 .form input:focus, .form select:focus {
    outline: none;
-   border: 2px solid $color-home;
+   border: 2px solid lightgray;
 }
 
 .form textarea {
@@ -68,7 +66,7 @@ form {
 }
 
 .submit input{
-   background-color: $color-home;
+   background-color: #ee7b08;
    font-weight: 600;
    line-height: 2;
    font-size: large;
@@ -76,7 +74,7 @@ form {
        margin-top: 60px;
    }
 }
-@media (min-height: 800px) and (min-width: 1160px) {
+   @media (min-height: 800px) and (min-width: 1160px) {
    #main-form {
        padding-bottom: 0;
    }
