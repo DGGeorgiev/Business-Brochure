@@ -33,6 +33,7 @@
 
 .form label {
 font-weight: 600;
+font-family: 'Noto Sans', sans-serif;
 }
 
 .form input, .form select, .form option, .form textarea {
@@ -67,6 +68,7 @@ font-weight: 600;
 
 .form-label label{
    font-weight: normal;
+   
 }
 
 .submit input{
@@ -74,6 +76,7 @@ font-weight: 600;
    font-weight: 600;
    line-height: 2;
    font-size: large;
+   font-family: 'Noto Sans', sans-serif;
    @media (min-height: 800px) and (min-width: 1160px){
        margin-top: 60px;
    }
